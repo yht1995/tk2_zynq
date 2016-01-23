@@ -1,0 +1,1280 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date              : Sat Jan 23 20:09:58 2016
+| Host              : ideapad_yht running 64-bit major release  (build 9200)
+| Command           : report_clock_utilization -file system_wrapper_clock_utilization_routed.rpt
+| Design            : system_wrapper
+| Device            : 7z020-clg400
+| Speed File        : -1  PRODUCTION 1.11 2014-09-11
+| Temperature Grade : C
+-------------------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Details of Global Clocks
+3. Details of Regional Clocks
+4. Details of Multi-Regional Clocks
+5. Details of I/O Clocks
+6. Details of Local Clocks
+7. Clock Regions : Key Resource Utilization
+8. Net wise resources used in clock region X0Y0
+9. Net wise resources used in clock region X0Y1
+10. Net wise resources used in clock region X1Y1
+11. Net wise resources used in clock region X0Y2
+12. Net wise resources used in clock region X1Y2
+
+1. Clock Primitive Utilization
+------------------------------
+
++-------+------+-----------+-----------+
+| Type  | Used | Available | Num Fixed |
++-------+------+-----------+-----------+
+| BUFG  |    9 |        32 |         0 |
+| BUFH  |    0 |        72 |         0 |
+| BUFIO |    0 |        16 |         0 |
+| MMCM  |    0 |         4 |         0 |
+| PLL   |    0 |         4 |         0 |
+| BUFR  |    0 |        16 |         0 |
+| BUFMR |    0 |         8 |         0 |
++-------+------+-----------+-----------+
+
+
+2. Details of Global Clocks
+---------------------------
+
++-------+----------------------------------------------------------------------+----------------------------------------------+--------------+-------+
+|       |                                                                      |                                              |   Num Loads  |       |
++-------+----------------------------------------------------------------------+----------------------------------------------+------+-------+-------+
+| Index | BUFG Cell                                                            | Net Name                                     | BELs | Sites | Fixed |
++-------+----------------------------------------------------------------------+----------------------------------------------+------+-------+-------+
+|     1 | system_i/pulse_1/PULSE_BUFG_inst                                     | system_i/pulse_1/PULSE                       |   33 |     9 |    no |
+|     2 | system_i/pulse_2/PULSE_BUFG_inst                                     | system_i/pulse_2/PULSE                       |   33 |     9 |    no |
+|     3 | system_i/pulse_3/PULSE_BUFG_inst                                     | system_i/pulse_3/PULSE                       |   33 |     9 |    no |
+|     4 | system_i/pulse_4/PULSE_BUFG_inst                                     | system_i/pulse_4/PULSE                       |   33 |     9 |    no |
+|     5 | system_i/pulse_1/r_clk_div_out_BUFG_inst                             | system_i/pulse_1/r_clk_div_out_BUFG          |   64 |    64 |    no |
+|     6 | system_i/pulse_2/r_clk_div_out_BUFG_inst                             | system_i/pulse_2/r_clk_div_out_BUFG          |   64 |    64 |    no |
+|     7 | system_i/pulse_3/r_clk_div_out_BUFG_inst                             | system_i/pulse_3/r_clk_div_out_BUFG          |   64 |    64 |    no |
+|     8 | system_i/pulse_4/r_clk_div_out_BUFG_inst                             | system_i/pulse_4/r_clk_div_out_BUFG          |   64 |    64 |    no |
+|     9 | system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG | system_i/processing_system7_0/inst/FCLK_CLK0 | 1293 |   323 |    no |
++-------+----------------------------------------------------------------------+----------------------------------------------+------+-------+-------+
+
+
+3. Details of Regional Clocks
+-----------------------------
+
+4. Details of Multi-Regional Clocks
+-----------------------------------
+
+5. Details of I/O Clocks
+------------------------
+
+6. Details of Local Clocks
+--------------------------
+
++-------+---------------------------------------------------------------------------+-------------------------------------------------------------------------------+--------------+-------+
+|       |                                                                           |                                                                               |   Num Loads  |       |
++-------+---------------------------------------------------------------------------+-------------------------------------------------------------------------------+------+-------+-------+
+| Index | Local Clk Src                                                             | Net Name                                                                      | BELs | Sites | Fixed |
++-------+---------------------------------------------------------------------------+-------------------------------------------------------------------------------+------+-------+-------+
+|     1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1  | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0  |    2 |     2 |    no |
+|     2 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0 |    2 |     2 |    no |
+|     3 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0 |    2 |     2 |    no |
+|     4 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0 |    2 |     2 |    no |
+|     5 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0 |    2 |     2 |    no |
+|     6 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0 |    2 |     2 |    no |
+|     7 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0 |    2 |     2 |    no |
+|     8 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0 |    2 |     2 |    no |
+|     9 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    10 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    11 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    12 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1  | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    13 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    14 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    15 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    16 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    17 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    18 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    19 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    20 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    21 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    22 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    23 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1  | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    24 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    25 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    26 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1  | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    27 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1  | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    28 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1  | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    29 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1  | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    30 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1  | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    31 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1  | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    32 | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1  | system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    33 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1  | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    34 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    35 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    36 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    37 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    38 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    39 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    40 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    41 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    42 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    43 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    44 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1  | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    45 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    46 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    47 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    48 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    49 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    50 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    51 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    52 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    53 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    54 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    55 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1  | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    56 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    57 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    58 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1  | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    59 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1  | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    60 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1  | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    61 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1  | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    62 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1  | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    63 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1  | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    64 | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1  | system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    65 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1  | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    66 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    67 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    68 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    69 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    70 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    71 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    72 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    73 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    74 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    75 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    76 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1  | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    77 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    78 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    79 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    80 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    81 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    82 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    83 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    84 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    85 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    86 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    87 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1  | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    88 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    89 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    90 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1  | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    91 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1  | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    92 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1  | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    93 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1  | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    94 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1  | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    95 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1  | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    96 | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1  | system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    97 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1  | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    98 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    99 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   100 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   101 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   102 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   103 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   104 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   105 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   106 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   107 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   108 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1  | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0  |    2 |     2 |    no |
+|   109 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   110 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   111 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   112 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   113 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   114 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   115 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   116 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   117 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   118 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   119 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1  | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0  |    2 |     2 |    no |
+|   120 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   121 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0 |    2 |     2 |    no |
+|   122 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1  | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0  |    2 |     2 |    no |
+|   123 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1  | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0  |    2 |     2 |    no |
+|   124 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1  | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0  |    2 |     2 |    no |
+|   125 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1  | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0  |    2 |     2 |    no |
+|   126 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1  | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0  |    2 |     2 |    no |
+|   127 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1  | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0  |    2 |     2 |    no |
+|   128 | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1  | system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0  |    2 |     2 |    no |
++-------+---------------------------------------------------------------------------+-------------------------------------------------------------------------------+------+-------+-------+
+
+
+7. Clock Regions : Key Resource Utilization
+-------------------------------------------
+
++-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                   | Global Clock |     BUFRs    |    BUFMRs    |    BUFIOs    |     MMCM     |      PLL     |      GT      |      PCI     |    ILOGIC    |    OLOGIC    |      FF      |     LUTM     |    RAMB18    |    RAMB36    |    DSP48E1   |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| X0Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    4 | 20000 |    0 |  4000 |    0 |    60 |    0 |    30 |    0 |    60 |
+| X1Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 25600 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y1              |    8 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 1398 |  9600 |   46 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y1              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   97 | 20800 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y2              |    4 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |  235 |  9600 |   24 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y2              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20800 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+* RAMB36 site can be used as two RAMB18/FIFO18 sites.
+
+
+8. Net wise resources used in clock region X0Y0
+-----------------------------------------------
+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                Clock Net Name                |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------------+
+| BUFG        | BUFHCE_X0Y8 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   4 |     0 |        0 | system_i/processing_system7_0/inst/FCLK_CLK0 |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------------+
+
+
+9. Net wise resources used in clock region X0Y1
+-----------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                Clock Net Name                |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------+
+| BUFG        | BUFHCE_X0Y14 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   24 |     0 |        0 | system_i/pulse_3/PULSE                       |
+| BUFG        | BUFHCE_X0Y15 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   24 |     0 |        0 | system_i/pulse_4/PULSE                       |
+| BUFG        | BUFHCE_X0Y23 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   28 |     0 |        0 | system_i/pulse_1/PULSE                       |
+| BUFG        | BUFHCE_X0Y12 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   32 |     0 |        0 | system_i/pulse_2/PULSE                       |
+| BUFG        | BUFHCE_X0Y20 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   63 |     0 |        0 | system_i/pulse_1/r_clk_div_out_BUFG          |
+| BUFG        | BUFHCE_X0Y21 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   64 |     0 |        0 | system_i/pulse_3/r_clk_div_out_BUFG          |
+| BUFG        | BUFHCE_X0Y22 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   64 |     0 |        0 | system_i/pulse_4/r_clk_div_out_BUFG          |
+| BUFG        | BUFHCE_X0Y13 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 1003 |    46 |        0 | system_i/processing_system7_0/inst/FCLK_CLK0 |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------+
+
+
+10. Net wise resources used in clock region X1Y1
+------------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |            Clock Net Name           |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------+
+| BUFG        | BUFHCE_X1Y20 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   1 |     0 |        0 | system_i/pulse_1/r_clk_div_out_BUFG |
+| BUFG        | BUFHCE_X1Y21 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  64 |     0 |        0 | system_i/pulse_2/r_clk_div_out_BUFG |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------+
+
+
+11. Net wise resources used in clock region X0Y2
+------------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                Clock Net Name                |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------------+
+| BUFG        | BUFHCE_X0Y32 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   4 |     0 |        0 | system_i/pulse_1/PULSE                       |
+| BUFG        | BUFHCE_X0Y34 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   8 |     0 |        0 | system_i/pulse_3/PULSE                       |
+| BUFG        | BUFHCE_X0Y35 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   8 |     0 |        0 | system_i/pulse_4/PULSE                       |
+| BUFG        | BUFHCE_X0Y33 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 215 |    24 |        0 | system_i/processing_system7_0/inst/FCLK_CLK0 |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------------+
+
+
+12. Net wise resources used in clock region X1Y2
+------------------------------------------------
+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | Clock Net Name |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+
+
+
+# Location of BUFG Primitives 
+set_property LOC BUFGCTRL_X0Y16 [get_cells system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG]
+set_property LOC BUFGCTRL_X0Y0 [get_cells system_i/pulse_1/PULSE_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y4 [get_cells system_i/pulse_1/r_clk_div_out_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y1 [get_cells system_i/pulse_2/PULSE_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y5 [get_cells system_i/pulse_2/r_clk_div_out_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y2 [get_cells system_i/pulse_3/PULSE_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y6 [get_cells system_i/pulse_3/r_clk_div_out_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y3 [get_cells system_i/pulse_4/PULSE_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y7 [get_cells system_i/pulse_4/r_clk_div_out_BUFG_inst]
+
+# Location of IO Clock Primitives
+
+# Location of MMCM Clock Primitives
+
+# Location of BUFH Clock Primitives
+
+# Location of BUFR Clock Primitives
+
+# Location of BUFMR Clock Primitives
+
+# Location of PLL Clock Primitives
+
+# Location of IO Primitives which is load of clock spine
+set_property LOC IOB_X1Y84 [get_cells PULSE_1_OBUF_inst]
+set_property LOC IOB_X1Y92 [get_cells PULSE_2_OBUF_inst]
+set_property LOC IOB_X1Y110 [get_cells PULSE_3_OBUF_inst]
+set_property LOC IOB_X1Y105 [get_cells PULSE_4_OBUF_inst]
+
+# Location of clock ports
+
+# Clock net "system_i/processing_system7_0/inst/FCLK_CLK0" driven by instance "system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG" located at site "BUFGCTRL_X0Y16"
+#startgroup
+create_pblock {CLKAG_system_i/processing_system7_0/inst/FCLK_CLK0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/processing_system7_0/inst/FCLK_CLK0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/processing_system7_0/inst/FCLK_CLK0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/processing_system7_0/inst/FCLK_CLK0}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "system_i/pulse_1/PULSE" driven by instance "system_i/pulse_1/PULSE_BUFG_inst" located at site "BUFGCTRL_X0Y0"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/PULSE}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/PULSE}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=PULSE_1_OBUF_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/PULSE"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/PULSE}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1" located at site "SLICE_X47Y79"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1" located at site "SLICE_X46Y81"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1" located at site "SLICE_X48Y76"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1" located at site "SLICE_X46Y81"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1" located at site "SLICE_X49Y79"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1" located at site "SLICE_X46Y82"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1" located at site "SLICE_X46Y82"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1" located at site "SLICE_X45Y86"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1" located at site "SLICE_X45Y86"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1" located at site "SLICE_X44Y87"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1" located at site "SLICE_X44Y86"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1" located at site "SLICE_X48Y81"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1" located at site "SLICE_X46Y85"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1" located at site "SLICE_X44Y87"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1" located at site "SLICE_X45Y87"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1" located at site "SLICE_X45Y87"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1" located at site "SLICE_X47Y91"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1" located at site "SLICE_X46Y91"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1" located at site "SLICE_X47Y90"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1" located at site "SLICE_X47Y90"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1" located at site "SLICE_X46Y90"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1" located at site "SLICE_X46Y91"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1" located at site "SLICE_X46Y77"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1" located at site "SLICE_X46Y90"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1" located at site "SLICE_X47Y88"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1" located at site "SLICE_X45Y78"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1" located at site "SLICE_X48Y81"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1" located at site "SLICE_X49Y81"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1" located at site "SLICE_X46Y79"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1" located at site "SLICE_X49Y81"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1" located at site "SLICE_X46Y81"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0" driven by instance "system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1" located at site "SLICE_X46Y81"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_1/r_clk_div_out_BUFG" driven by instance "system_i/pulse_1/r_clk_div_out_BUFG_inst" located at site "BUFGCTRL_X0Y4"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_1/r_clk_div_out_BUFG}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_1/r_clk_div_out_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_1/r_clk_div_out_BUFG"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_1/r_clk_div_out_BUFG}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/PULSE" driven by instance "system_i/pulse_2/PULSE_BUFG_inst" located at site "BUFGCTRL_X0Y1"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/PULSE}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/PULSE}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=PULSE_2_OBUF_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/PULSE"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/PULSE}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1" located at site "SLICE_X53Y81"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1" located at site "SLICE_X50Y83"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1" located at site "SLICE_X53Y79"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1" located at site "SLICE_X51Y83"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1" located at site "SLICE_X51Y84"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1" located at site "SLICE_X51Y85"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1" located at site "SLICE_X54Y85"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1" located at site "SLICE_X50Y87"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1" located at site "SLICE_X50Y88"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1" located at site "SLICE_X51Y90"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1" located at site "SLICE_X51Y87"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1" located at site "SLICE_X53Y78"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1" located at site "SLICE_X51Y88"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1" located at site "SLICE_X51Y91"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1" located at site "SLICE_X51Y89"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1" located at site "SLICE_X52Y90"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1" located at site "SLICE_X50Y89"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1" located at site "SLICE_X53Y93"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1" located at site "SLICE_X51Y93"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1" located at site "SLICE_X52Y96"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1" located at site "SLICE_X53Y92"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1" located at site "SLICE_X53Y95"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1" located at site "SLICE_X51Y80"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1" located at site "SLICE_X50Y94"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1" located at site "SLICE_X51Y96"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1" located at site "SLICE_X53Y76"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1" located at site "SLICE_X54Y82"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1" located at site "SLICE_X50Y82"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1" located at site "SLICE_X51Y82"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1" located at site "SLICE_X51Y77"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1" located at site "SLICE_X53Y80"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0" driven by instance "system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1" located at site "SLICE_X50Y77"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_2/r_clk_div_out_BUFG" driven by instance "system_i/pulse_2/r_clk_div_out_BUFG_inst" located at site "BUFGCTRL_X0Y5"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_2/r_clk_div_out_BUFG}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_2/r_clk_div_out_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_2/r_clk_div_out_BUFG"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_2/r_clk_div_out_BUFG}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/PULSE" driven by instance "system_i/pulse_3/PULSE_BUFG_inst" located at site "BUFGCTRL_X0Y2"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/PULSE}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/PULSE}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=PULSE_3_OBUF_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/PULSE"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/PULSE}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1" located at site "SLICE_X34Y79"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1" located at site "SLICE_X34Y82"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1" located at site "SLICE_X33Y80"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1" located at site "SLICE_X34Y82"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1" located at site "SLICE_X35Y81"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1" located at site "SLICE_X32Y78"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1" located at site "SLICE_X33Y82"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1" located at site "SLICE_X34Y83"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1" located at site "SLICE_X32Y85"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1" located at site "SLICE_X33Y86"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1" located at site "SLICE_X33Y82"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1" located at site "SLICE_X30Y78"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1" located at site "SLICE_X33Y85"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1" located at site "SLICE_X35Y85"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1" located at site "SLICE_X32Y84"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1" located at site "SLICE_X34Y84"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1" located at site "SLICE_X34Y88"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1" located at site "SLICE_X31Y89"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1" located at site "SLICE_X30Y88"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1" located at site "SLICE_X31Y87"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1" located at site "SLICE_X31Y88"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1" located at site "SLICE_X31Y88"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1" located at site "SLICE_X31Y77"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1" located at site "SLICE_X34Y87"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1" located at site "SLICE_X27Y88"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1" located at site "SLICE_X31Y78"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1" located at site "SLICE_X30Y79"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1" located at site "SLICE_X33Y78"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1" located at site "SLICE_X30Y81"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1" located at site "SLICE_X30Y79"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1" located at site "SLICE_X32Y82"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0" driven by instance "system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1" located at site "SLICE_X33Y79"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_3/r_clk_div_out_BUFG" driven by instance "system_i/pulse_3/r_clk_div_out_BUFG_inst" located at site "BUFGCTRL_X0Y6"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_3/r_clk_div_out_BUFG}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_3/r_clk_div_out_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_3/r_clk_div_out_BUFG"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_3/r_clk_div_out_BUFG}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/PULSE" driven by instance "system_i/pulse_4/PULSE_BUFG_inst" located at site "BUFGCTRL_X0Y3"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/PULSE}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/PULSE}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=PULSE_4_OBUF_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/PULSE"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/PULSE}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1" located at site "SLICE_X40Y77"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[0]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1" located at site "SLICE_X42Y77"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[10]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1" located at site "SLICE_X43Y81"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[11]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1" located at site "SLICE_X41Y81"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[12]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1" located at site "SLICE_X43Y75"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[13]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1" located at site "SLICE_X41Y81"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[14]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1" located at site "SLICE_X41Y78"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[15]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1" located at site "SLICE_X43Y83"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[16]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1" located at site "SLICE_X39Y82"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[17]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1" located at site "SLICE_X40Y76"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[18]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1" located at site "SLICE_X41Y83"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[19]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1" located at site "SLICE_X43Y77"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[1]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1" located at site "SLICE_X41Y86"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[20]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1" located at site "SLICE_X39Y85"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[21]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1" located at site "SLICE_X41Y86"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[22]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1" located at site "SLICE_X41Y86"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[23]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1" located at site "SLICE_X43Y89"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[24]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1" located at site "SLICE_X45Y89"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[25]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1" located at site "SLICE_X43Y89"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[26]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1" located at site "SLICE_X45Y89"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[27]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1" located at site "SLICE_X43Y89"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[28]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1" located at site "SLICE_X44Y89"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[29]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1" located at site "SLICE_X38Y80"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[2]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1" located at site "SLICE_X43Y89"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[30]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1" located at site "SLICE_X44Y89"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[31]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1" located at site "SLICE_X38Y80"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[3]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1" located at site "SLICE_X40Y80"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[4]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1" located at site "SLICE_X41Y80"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[5]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1" located at site "SLICE_X37Y79"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[6]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1" located at site "SLICE_X36Y79"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[7]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1" located at site "SLICE_X40Y81"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[8]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0" driven by instance "system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1" located at site "SLICE_X40Y81"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/inst/pulse_v1_0_S00_AXI_inst/r_pulse_cnt_reg[9]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "system_i/pulse_4/r_clk_div_out_BUFG" driven by instance "system_i/pulse_4/r_clk_div_out_BUFG_inst" located at site "BUFGCTRL_X0Y7"
+#startgroup
+create_pblock {CLKAG_system_i/pulse_4/r_clk_div_out_BUFG}
+add_cells_to_pblock [get_pblocks  {CLKAG_system_i/pulse_4/r_clk_div_out_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/pulse_4/r_clk_div_out_BUFG"}]]]
+resize_pblock [get_pblocks {CLKAG_system_i/pulse_4/r_clk_div_out_BUFG}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup

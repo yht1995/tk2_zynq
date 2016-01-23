@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Jan 21 16:53:21 2016
+# Process ID: 3612
+# Current directory: D:/Project/Tinker-Hardware/tk2_zynq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4080 D:\Project\Tinker-Hardware\tk2_zynq\tk2_zynq.xpr
+# Log file: D:/Project/Tinker-Hardware/tk2_zynq/vivado.log
+# Journal file: D:/Project/Tinker-Hardware/tk2_zynq\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Project/Tinker-Hardware/tk2_zynq/tk2_zynq.xpr
+open_hw
+connect_hw_server
+open_hw_target
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+refresh_hw_server {localhost:3121}
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+close_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/00000000000000}
+open_bd_design {D:/Project/Tinker-Hardware/tk2_zynq/tk2_zynq.srcs/sources_1/bd/system/system.bd}
